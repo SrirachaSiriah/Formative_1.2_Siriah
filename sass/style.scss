@@ -1,5 +1,6 @@
 @import 'variables';
-
-body{
-  background: $back-color;
-}
+@import 'navigation';
+@import 'desktop';
+@import 'containers';
+@import 'typography';
+@import 'images';
