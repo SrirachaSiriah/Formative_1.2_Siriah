@@ -12,6 +12,7 @@ main{
   font-size: 35px;
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
+  color: $blue_color;
 }
 
 .teacher_names{
@@ -19,6 +20,7 @@ main{
   font-size: 25px;
   text-align: center;
   font-family: 'Nunito Sans', sans-serif;
+  color: $blue_color;
 }
 
 .row{
@@ -30,6 +32,12 @@ height: auto;
   width:100%;
   height: auto;
 }
+
+.row3{
+  width:100%;
+  height: auto;
+}
+
 .about_section{
   padding-top: 30px;
   padding-left: 30px;
@@ -50,19 +58,16 @@ height: auto;
   float: left;
   width: 28%;
   margin: 2%;
+  display: table;
 }
 
 .column2{
   float: left;
   width: 28%;
   margin: 2%;
+  display: table;
 }
 
-.column3{
-  float: left;
-  width: 28%;
-  margin: 2%;
-}
 
 // Clears floats after the columns
 .row:after{
@@ -81,7 +86,18 @@ height: auto;
   font-size: 15px;
   font-family: 'Nunito Sans', sans-serif;
   font-weight: lighter;
+  text-align:left;
 
+}
+
+.quote{
+  margin: 5px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 20px;
+  font-weight:bold;
+  text-align: center;
+  line-height: 38px;
+  color: $blue_color;
 }
 
 .about_body{
@@ -94,13 +110,29 @@ height: auto;
   margin-left: 15%;
 }
 
-.team_body2{
-  width: 70%;
-  margin-left: 15%;
-}
 .team_images{
   margin: 10%;
   padding: 10px;
   width:280px;
   height:280px;
+}
+
+.blue_box{
+  position:absolute;
+  top: 35%;
+  margin-left: 0;
+  width: 80%;
+  height: 35vh;
+  z-index: -1;
+  float:left;
+  background-color: $light_blue_color;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background-color: $blue_color;
 }
