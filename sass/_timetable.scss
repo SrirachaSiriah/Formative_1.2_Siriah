@@ -1,0 +1,86 @@
+.timetable{
+  background: $gray_color;
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.iyengar__timetable{
+  width: 100%;
+  height: auto;
+
+  // border: 1px solid blue,
+}
+
+.iyengar__calendar{
+  width: 80%;
+  // border: 1px solid red;
+  margin: auto;
+  h1{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.week-calendar{
+  background: $gray-color;
+}
+
+.weekday{
+  font-family: 'Nunito Sans', sans-serif;
+  background: $blue-color;
+  color: white;
+  padding: 2% 0;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.015em
+}
+
+
+
+.message-header{
+  font-family: 'Nunito Sans', sans-serif;
+  background: $light-blue-color;
+  color: white;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 128.91%;
+  letter-spacing: -0.015em;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  padding: 5%;
+  margin: 0.1%;
+}
+
+.message-text{
+  font-family: 'Nunito Sans', sans-serif;
+  background: white;
+  font-size: 14px;
+  border-radius:  0 0 10px 10px;
+  padding: 5%;
+  margin: 0.1%;
+}
+
+.class__descriptions{
+  text-align: center;
+  color: $blue-color;
+  font-weight: bold;
+  padding-bottom: 5%;
+  font-size: 14px;
+}
+
+.calendar__events--friday{
+  margin-top: -300px;
+}
+
+.calendar__events--saturday{
+  margin-top: -150px;
+}
+
+.calendar__events--tuesday{
+}
