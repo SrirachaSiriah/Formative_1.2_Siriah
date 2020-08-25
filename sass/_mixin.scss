@@ -1,0 +1,8 @@
+@mixin dimension($w,$h){
+  width: $w;
+  height: $h;
+}
+
+@mixin imageStyle($width){
+  width: $width;
+}

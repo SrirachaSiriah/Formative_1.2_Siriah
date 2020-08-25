@@ -1,6 +1,32 @@
 @media screen and (min-width: 501px){
 
-  }
+      .hamburger_nav{
+        display: none;
+      }
+
+      .column{
+        width:100%;
+        margin-left: 10%;
+      }
+
+      .column2{
+        width:100%;
+        margin-left: 10%;
+      }
+
+      .column:after{
+        content:"";
+        display: table;
+        clear: both;
+      }
+
+      .column2:after{
+        content:"";
+        display: table;
+        clear: both;
+      }
+
+}
 
 *{
   margin:0;
