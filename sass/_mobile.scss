@@ -1,94 +1,82 @@
-@media screen and (max-width: 500px){
+@media screen and (max-width: 430px){
 
   .top_nav{
-    display: none;
-    }
+    display:none;
+  }
 
-    .nav_line{
-      width: 30px;
-      height: 3px;
-      background: $light_blue_color;
-      margin: 5px;
-    }
+  body{
+    overflow-x: hidden;
+  }
 
-    .hamburger_nav{
+  .mobile_nav_list{
+    position:absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: $gray_color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translate(100%);
+  }
 
-      // position: relative;
-    }
+.mobile_nav_list li{
+  opacity:0;
+}
 
-    .hamburger{
-      // position: absolute;
-      cursor: pointer;
-      right: 5%;
-      top:50%;
-      transform: translate(-5%, -50%)
-      // transition: transform 0.5s;
-    }
-
-    .nav_links{
-      position: absolute;
-      right: 0px;
-      background: $light_blue_color;
-      height: 92vh;
-      top: 8vh;
-      width: 50%;
-      flex-direction: column;
-      display: flex;
-      align-items: center;
-      transform: translate(100%);
-    }
-
-    .nav_links li{
-      opacity: 0;
-    }
+.burger{
+  display:block;
 
 }
 
-.nav_active{
-  transform: translate(0);
 }
 
 
-
-
-
-// .nav_links{
-//
-//   // display: none;
-//   }
-
-.hamburger{
-  position: absolute;
-  cursor: pointer;
-  right: 5%;
-  top: 50%;
-  transform: translate(-5%, -50%);
-}
-
-.nav_links{
-  font-family: 'Nunito Sans', sans-serif;
+.mobile_nav_menu{
   display: flex;
-  list-style: none;
-  width:50%;
-  background: $gray_color;
-  height:100%;
   justify-content: space-around;
   align-items: center;
-  margin-left: auto;
+  min-height: 8vh;
+  background-color: $gray_color;
+  font-family: 'Nunito Sans', sans-serif;
+  letter-spacing: 2px;
+  font-size: 15px;
+
 }
 
-.nav_links li a{
-        color:$blue_color;
-        font-weight: bold;
-        text-decoration: none;
-        font-size: 15px;
-      }
-
-// }
-// Media query ends here
+.mobile_nav_logo{
+}
 
 
-.hamburger_nav{
-  height: 10vh;
-  background: $light_blue_color;
+.mobile_nav_list{
+
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+
+}
+
+.mobile_nav_list a{
+  color: $blue_color;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mobile_nav_list a:hover{
+  color: $light_blue_color;
+}
+
+
+.mobile_nav_list li{
+  list-style: none;
+}
+
+
+
+.burger div{
+  width: 25px;
+  height:3px;
+  background-color: $light_blue_color;
+  margin: 5px;
 }
