@@ -18,7 +18,9 @@
     flex-direction: column;
     align-items: center;
     width: 50%;
-    transform: translate(100%);
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+
   }
 
 .mobile_nav_list li{
@@ -27,8 +29,10 @@
 
 .burger{
   display:block;
+  cursor: pointer;
 
 }
+
 
 }
 
@@ -79,4 +83,8 @@
   height:3px;
   background-color: $light_blue_color;
   margin: 5px;
+}
+
+.top_nav-active{
+  transform: translateX(0%);
 }
